@@ -14,7 +14,7 @@
  * @returns {number} - The sum of the two numbers
  */
 function sum(a, b) {
-  // write your code here & return value
+  return a + b;
 }
 
 /**
@@ -24,7 +24,10 @@ function sum(a, b) {
  * @returns {number} - The sum of the two numbers
  */
 function betterSum(x, y) {
-  // write your code here & return value
+  const tx = parseInt(x.toString(), 10);
+  const ty = parseInt(y.toString(), 10);
+
+  return tx + ty;
 }
 
 /**
@@ -37,7 +40,10 @@ function betterSum(x, y) {
  * ? computes the first operand modulo the second operand
  */
 function remainder(number, divisor) {
-  // write your code here & return value
+  if (divisor > 0) {
+    return number % divisor;
+  }
+  return NaN;
 }
 module.exports = {
   sum,
